@@ -21,13 +21,13 @@ public class GradientBackgroundExampleActivity extends AhoyOnboarderActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        AhoyOnboarderCard ahoyOnboarderCard1 = new AhoyOnboarderCard("City Guide", "Detailed guides to help you plan your trip.", R.drawable.backpack);
-        AhoyOnboarderCard ahoyOnboarderCard2 = new AhoyOnboarderCard("Travel Blog", "Share your travel experiences with a vast network of fellow travellers.", R.drawable.chalk);
-        AhoyOnboarderCard ahoyOnboarderCard3 = new AhoyOnboarderCard("Chat", "Connect with like minded people and exchange your travel stories.", R.drawable.chat);
+        AhoyOnboarderCard ahoyOnboarderCard1 = new AhoyOnboarderCard("Откроем секрет", "Если в супермаркете товар продается со скидкой, это гарантия, что товар - первой свежести.", R.drawable.onboarding_cards_1);
+        AhoyOnboarderCard ahoyOnboarderCard2 = new AhoyOnboarderCard("Дело в том, что", "Акции проводят не магазины, а производители товаров для рекламы. Они строго следят за качеством во время акций.", R.drawable.onboarding_cards_1);
+        AhoyOnboarderCard ahoyOnboarderCard3 = new AhoyOnboarderCard("Все акции тут", "В приложении Скоролёк вы найдете информацию о скидках и акциях во всех супермаркетах.", R.drawable.onboarding_cards_1);
 
-        ahoyOnboarderCard1.setBackgroundColor(R.color.black_transparent);
-        ahoyOnboarderCard2.setBackgroundColor(R.color.black_transparent);
-        ahoyOnboarderCard3.setBackgroundColor(R.color.black_transparent);
+        ahoyOnboarderCard1.setBackgroundColor(R.color.white);
+        ahoyOnboarderCard2.setBackgroundColor(R.color.white);
+        ahoyOnboarderCard3.setBackgroundColor(R.color.white);
 
         List<AhoyOnboarderCard> pages = new ArrayList<>();
 
@@ -36,8 +36,8 @@ public class GradientBackgroundExampleActivity extends AhoyOnboarderActivity {
         pages.add(ahoyOnboarderCard3);
 
         for (AhoyOnboarderCard page : pages) {
-            page.setTitleColor(R.color.white);
-            page.setDescriptionColor(R.color.grey_200);
+            page.setTitleColor(R.color.black);
+            page.setDescriptionColor(R.color.black);
             //page.setTitleTextSize(dpToPixels(12, this));
             //page.setDescriptionTextSize(dpToPixels(8, this));
             //page.setIconLayoutParams(width, height, marginTop, marginLeft, marginRight, marginBottom);
@@ -53,7 +53,7 @@ public class GradientBackgroundExampleActivity extends AhoyOnboarderActivity {
         }
 
         Typeface face = Typeface.createFromAsset(getAssets(), "fonts/Roboto-Light.ttf");
-        setFont(face);
+//        setFont(face);
 
         setOnboardPages(pages);
     }

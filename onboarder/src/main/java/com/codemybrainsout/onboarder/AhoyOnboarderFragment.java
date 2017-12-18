@@ -162,10 +162,10 @@ public class AhoyOnboarderFragment extends Fragment {
         }
 
         if (iconWidth != 0 && iconHeight != 0) {
-            FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(iconWidth, iconHeight);
-            layoutParams.gravity = Gravity.CENTER_HORIZONTAL;
-            layoutParams.setMargins(marginLeft, marginTop, marginRight, marginBottom);
-            ivOnboarderImage.setLayoutParams(layoutParams);
+//            RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(iconWidth, iconHeight);
+//            layoutParams.gravity = Gravity.CENTER_HORIZONTAL;
+//            layoutParams.setMargins(marginLeft, marginTop, marginRight, marginBottom);
+//            ivOnboarderImage.setLayoutParams(layoutParams);
         }
 
         return view;
